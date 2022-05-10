@@ -8,7 +8,11 @@ html {
 body {}
 
 .margin-placeholder {
-    margin-top: 8%;
+    margin-top: 4%;
+}
+
+hr {
+    width: 90%;
 }
 
 .title-container {
@@ -36,9 +40,6 @@ body {}
 
 .text-block-text {
     font-size: 120%;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .two-rows-container {
