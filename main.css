@@ -5,6 +5,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.messagecontainer {
+    color: red;
+    font-size: 150% !important;
+}
+
 hr {
     width: 90%;
 }
@@ -61,4 +66,12 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.smooth-scroll-wrapper {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }

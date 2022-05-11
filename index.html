@@ -15,6 +15,9 @@
 </head>
 
 <body>
+
+    <!-- <div class="smooth-scroll-wrapper">
+        <div class="content"> -->
     <div class="title-container">
         <p class="title-p">LOREM</p>
         <p class="title-p">IPSUM</p>
@@ -22,6 +25,30 @@
     </div>
 
     <div class="text-block-container">
+        <div id="messagecontainer" class="messagecontainer text-block-text"></div>
+        <script>
+            if (detectBrowser() != 'Firefox') {
+                var div = document.getElementById('messagecontainer');
+                div.innerHTML += "Use Firefox for better performance";
+            }
+
+            function detectBrowser() {
+                if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
+                    return 'Opera';
+                } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+                    return 'Chrome';
+                } else if (navigator.userAgent.indexOf("Safari") != -1) {
+                    return 'Safari';
+                } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+                    return 'Firefox';
+                } else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) {
+                    return 'IE'; //crap
+                } else {
+                    return 'Unknown';
+                }
+            }
+        </script>
+
         <p class="text-block-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum illum ipsam quam natus reiciendis facere similique velit exercitationem dicta harum, saepe, voluptates autem dolorum necessitatibus quos sit a earum? Quaerat iste illo officia deleniti
             tempora fugiat mollitia, quas voluptatem quam.</p>
     </div>
@@ -64,6 +91,29 @@
     <br>
     <br>
     <br>
+    <!-- <script>
+                const body = document.body,
+                    scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+                    height = scrollWrap.getBoundingClientRect().height - 1,
+                    speed = 0.04;
+
+                var offset = 0;
+
+                body.style.height = Math.floor(height) + "px";
+
+                function smoothScroll() {
+                    offset += (window.pageYOffset - offset) * speed;
+
+                    var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                    scrollWrap.style.transform = scroll;
+
+                    callScroll = requestAnimationFrame(smoothScroll);
+                }
+
+                smoothScroll();
+            </script> -->
+    <!-- </div>
+    </div> -->
 </body>
 
 </html>
