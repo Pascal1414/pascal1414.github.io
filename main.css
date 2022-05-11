@@ -5,12 +5,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {}
-
-.margin-placeholder {
-    margin-top: 4%;
-}
-
 hr {
     width: 90%;
 }
@@ -63,7 +57,7 @@ hr {
 }
 
 .two-rows-container-text {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
