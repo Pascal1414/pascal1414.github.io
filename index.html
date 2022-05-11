@@ -12,6 +12,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
 
 </head>
 
@@ -28,7 +29,7 @@
     </div>
 
     <div class="margin-placeholder">&nbsp; </div>
-    <hr/>
+    <hr />
     <div class="margin-placeholder">&nbsp; </div>
 
     <!--div class="text-block-container">
@@ -39,26 +40,27 @@
         <div class="two-rows-container-text">
             <p class="two-rows-element text-block-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facilis praesentium, iusto culpa vitae repudiandae ipsa quas accusantium sed fuga. Accusantium repudiandae eligendi sapiente obcaecati.</p>
         </div>
-        <img class="two-rows-element image-splitscreen" src="black-wall.jpg">
-    </div>
-    <div class="two-rows-container">
+        <div class="two-rows-element image-splitscreen" data-stellar-background-ratio="0.8" style="background-image: url(black-wall.jpg);"></div>
 
-        <img class="two-rows-element image-splitscreen" src="white-paint.jpg">
+    </div>
+
+    <div class="two-rows-container">
+        <div class="two-rows-element image-splitscreen" data-stellar-background-ratio="0.8" style="background-image: url(white-paint.jpg);"></div>
         <div class="two-rows-container-text">
             <p class="two-rows-element text-block-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facilis praesentium, iusto culpa vitae repudiandae ipsa quas accusantium sed fuga. Accusantium repudiandae eligendi sapiente obcaecati.</p>
         </div>
     </div>
+
+
     <br>
     <br>
     <br>
     <br>
     <br>
-    <!-- <div class="two-rows-container">
-        <img class="two-rows-element image-splitscreen test" data-modifier="30" src="white-paint.jpg">
-        <div class="two-rows-container-text">
-            <p class="two-rows-element text-block-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facilis praesentium, iusto culpa vitae repudiandae ipsa quas accusantium sed fuga. Accusantium repudiandae eligendi sapiente obcaecati.</p>
-        </div>
-    </div> -->
+
+    <script>
+        $('body').stellar();
+    </script>
     <br>
     <br>
     <br>

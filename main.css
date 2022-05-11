@@ -46,6 +46,7 @@ hr {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    height: 580px;
 }
 
 .image-splitscreen {
@@ -66,14 +67,4 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.test {
-    position: absolute;
-    width: 100%;
-    transform: translateY(var(--translateY));
-    will-change: transform;
-}
-
-
 }
