@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // $fn.scrollSpeed(step, speed, easing);
-    jQuery.scrollSpeed(300, 000);
+    jQuery.scrollSpeed(300, 0);
 });
 
 
