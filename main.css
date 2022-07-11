@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 html {
     background-color: black;
     font-family: EnV, Arial, Helvetica, sans-serif;
